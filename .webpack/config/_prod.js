@@ -1,4 +1,4 @@
-const { merge, CssMinimizerPlugin, CleanWebpackPlugin, TerserPlugin } = require('webpack/deps')
+const { merge, CssMinimizerPlugin, CleanWebpackPlugin, TerserPlugin } = require('../deps')
 const common = require('./_common')
 
 // Plugins

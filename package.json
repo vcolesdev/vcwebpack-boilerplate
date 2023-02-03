@@ -4,8 +4,8 @@
   "description": "A customizable Webpack 5 boilerplate suitable for most projects.  Developed for personal use.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --config webpack/config/_common.js",
-    "build": "webpack --mode production --config webpack/config/_prod.js",
+    "start": "webpack-dev-server --mode development --config ./.webpack/config/_common.js",
+    "build": "webpack --mode production --config ./.webpack/config/_prod.js",
     "test": "echo \"Error: No test specified\" && exit 1"
   },
   "keywords": [
