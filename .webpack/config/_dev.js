@@ -6,7 +6,5 @@ module.exports = merge(common, {
     mode: 'development',
     watch: true,
     devtool: 'source-map',
-    devServer: server
+    devServer: { ...server }
 })
-
-console.log(`Dev server is up and running at http://localhost`)
