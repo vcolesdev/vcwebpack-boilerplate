@@ -2,6 +2,7 @@
 # Uninstall script
 
 DEPS=node_modules
+BUILD=build
 LOCKFILE=package-lock.json
 
 # Prompt the user to remove Symfony.
@@ -20,7 +21,8 @@ esac; done
 
 # Check for node_modules dir.
 if [ -d "$DEPS" ]; then
-  rm -Rf $DEPS && rm $LOCKFILE && echo "That's all for now, folks!  $DEPS and $LOCKFILE removed."
+  rm -Rf $DEPS && rm -Rf $BUILD && rm $LOCKFILE
+   echo "That's all for now, folks!  $DEPS, $BUILD, and $LOCKFILE removed."
   else echo "No $DEPS directory found. Exiting..."; fi
 
 echo "So fresh and so clean, clean. Dependencies removed."
