@@ -8,8 +8,8 @@ const plugins = [
      */
     new HtmlWebpackPlugin({
         title: title,
-        favicon: `${paths.static}/favicon-32x32.png`,
-        template: `${paths.app}/index.html`,
+        favicon: `${paths.public}/favicon-32x32.png`,
+        template: `${paths.app}/views/index.html`,
         filename: 'index.html'
     }),
 
@@ -26,7 +26,7 @@ const plugins = [
      */
     new CopyPlugin({
         patterns: [
-            { from: paths.static }
+            { from: paths.public }
         ]
     }),
 

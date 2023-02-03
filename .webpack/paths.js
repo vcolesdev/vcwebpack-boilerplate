@@ -8,7 +8,7 @@ const paths = {
     // Production ready files
     build: path.resolve(__dirname, '../build'),
     // Static assets
-    static: path.resolve(__dirname, '../static')
+    public: path.resolve(__dirname, '../public')
 }
 
 module.exports = { paths }
